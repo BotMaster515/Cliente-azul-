@@ -873,10 +873,7 @@
     el.innerHTML = `
       <div class="recv-name">${esc(name)}</div>
       <div class="recv-ciphered">${esc(ciphered)}</div>
-      <div class="recv-deciphered">${esc(deciphered)}</div>
-      <div class="recv-hint">toca para descifrar</div>
     `;
-    el.addEventListener('click', () => el.classList.toggle('revealed'));
     sentFeed.appendChild(el);
     sentFeed.scrollTop = sentFeed.scrollHeight;
   }
